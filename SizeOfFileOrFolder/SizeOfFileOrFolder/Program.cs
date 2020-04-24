@@ -10,6 +10,13 @@ namespace SizeOfFileOrFolder
     {
         static void Main(string[] args)
         {
+            Console.Write("Introduceti adresa fisierului/folderului: ");
+            string path = Console.ReadLine();
+
+            SOFF sOFF = new SOFF(path);
+            sOFF.Size();
+
+            Console.ReadKey();
         }
     }
 }
